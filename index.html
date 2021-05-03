@@ -21,7 +21,7 @@
       <div class="container text-center px-0">
         <div class="logo shadowed" style="width: 75%"></div>
         <span class="titles mt-0 text-warning" style="font-weight: 900; font-size: 150%">NAME GENERATOR</span>
-        <p class="my-2 mb-4 text-secondary" id="instruction"><span style="font-size: 80%;">Enter your name 👇 then click 🎮 to generate!</span></p>
+        <small></small><p class="my-2 mb-4 text-secondary" id="instruction">Enter your name 👇 then click ➜ to generate!</p></small>
         <div id="io-container">
           <div class="input-group px-3">
             <input class="form-control form-control-lg mx-auto text-center name"
@@ -30,7 +30,7 @@
             <div class="input-group-append">
               <button type="button" onclick="getNameArray()" id="btn-generate"
                 style=""
-                class="btn btn-primary btn-lg">🎮</button>
+                class="btn btn-primary btn-lg">➜</button>
             </div>
           </div>
           <p class="px-3 mb-3 text-secondary text-left" style="font-size: 80%;"><span id="chars-left">24</span>
@@ -94,7 +94,7 @@
       </div><br>
       <small class="d-inline-block px-3" style="color: #969696;">Supports generating uppercase letters only. View site
         in landscape to print longer words.</small><br>
-      <small class="d-inline-block px-3 mb-4" style="color: #969696;">Made with ♥️ by <a
+      <small class="d-inline-block px-3 mb-4" style="color: #969696;">Created by <a
           href=https://twitter.com/surethingpating/ target="_blank"><strong>surethingpating</strong></a>
           and <a
           href=https://twitter.com/rits_kolokoy/ target="_blank"><strong>rits_kolokoy</strong></a></small>
@@ -127,7 +127,7 @@
     // Reset indicators
     document.getElementById('chars-left').textContent = '24';
     setTimeout(() => {
-      document.getElementById("instruction").textContent = "Enter your name 👇 then click 🎮 to generate!";
+      document.getElementById("instruction").textContent = "Enter your name 👇 then click ➜ to generate!";
     }, 1000);
 
     // Reset output field
