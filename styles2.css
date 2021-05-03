@@ -1,0 +1,313 @@
+::selection {
+  background-color: hsl(200, 83%, 51%);
+  color: hsl(200, 83%, 15%);
+}
+
+#generated_name {
+  height: 100% !important;
+  background-color: white;
+}
+
+#btn-generate {
+  border: solid 1px rgba(84, 134, 183, 0.396)!important;
+  background-color: rgb(92, 220, 255); border-top-right-radius: 8px!important;border-bottom-right-radius: 8px!important;
+}
+
+.name {
+  padding-left: 0px !important;
+  border-top-left-radius: 8px!important;border-bottom-left-radius: 8px!important; border: solid rgba(48, 157, 200, 0.259) 3px!important;
+}
+
+.gb-card {
+  /* border: solid rgb(255, 213, 0) 3px !important; */
+  border: none!important;
+  border-radius: 15px !important;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.272);
+}
+
+.fill {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 23px;
+  margin: 0;
+  margin-left: -3px;
+}
+
+.btn-danger2 {
+  background-color: pink;
+}
+
+
+/* Typing Dot Animation */
+#io-container {
+  position: relative;
+}
+#io-container .typing-animation {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+#io-container:focus-within .typing-animation .dot {
+  display: flex;
+  margin: 0 2px;
+  width: 8px;
+  height: 8px;
+  background: hsl(240, 9%, 78%);
+  border-radius: 8px;
+  animation: bouncing 2s ease-in-out infinite;
+  will-change: transform;
+}
+#io-container .typing-animation .dot:nth-child(1) {
+  animation-delay: 800ms;
+}
+#io-container .typing-animation .dot:nth-child(2) {
+  animation-delay: 500ms;
+}
+#io-container .typing-animation .dot:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+@keyframes bouncing {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#generator {
+  border-radius: 100px !important;
+  box-shadow: 0px 5px 10px rgb(255, 200, 0);
+}
+
+#youtube,
+#download {
+  border-radius: 100px !important;
+  box-shadow: 0px 10px 10px #0000001a;
+}
+
+.show {
+  display: inline-block;
+  animation: showText 300ms ease-in-out;
+}
+
+@keyframes showText {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.A, .a {
+  margin-left: -5px !important;
+  background-image: url(./images/A.png);
+  background-size: 100%;
+}
+
+.B, .b {
+  background-image: url(./images/B.png);}  
+
+.C, .c {
+  background-image: url(images/C.png);} 
+
+.D {
+  background-image: url(images/D.png);} 
+
+  .E {
+  background-image: url(images/E.png);}
+
+.F {
+  background-image: url(images/F.png);
+}
+
+.G {
+  margin-left: -3px !important;
+  margin-right: -1px !important;
+  background-image: url(images/G.png);
+}
+
+.H {
+  background-image: url(images/H.png);
+}
+
+.I {
+  margin-left: -7px !important;
+  margin-right: -5px !important;
+  background-image: url(images/I.png);
+}
+
+.J {
+  background-image: url(images/J.png);
+}
+
+.K {
+  background-image: url(images/K.png);
+}
+
+.L {
+  margin-left: -6px !important;
+  margin-right: -2px !important;
+  background-image: url(images/L.png);
+}
+
+.M {
+  background-image: url(images/M.png);
+}
+
+.N, .n {
+  background-image: url(images/N.png);
+}
+
+.O,.o {
+  margin-left: -3px !important;
+  margin-right: -1px !important;
+  background-image: url(images/O.png);
+}
+
+.P,.p {
+  background-image: url(images/P.png);
+}
+
+.Q,.q {
+  background-image: url(images/Q.png);
+}
+
+.R,.r {
+  background-image: url(images/R.png);
+}
+
+.S,.s {
+  margin-left: -4px !important;
+  margin-right: -0px !important;
+  background-image: url(images/S.png);
+}
+
+.T,.t {
+  background-image: url(images/T.png);
+}
+
+.U,.u {
+  background-image: url(images/U.png);
+}
+
+.V,.v {
+  margin-right: -3px !important;
+  background-image: url(images/V.png);
+}
+
+.W,.w {
+  margin-left: 2px !important;
+  background-image: url(images/W.png);
+}
+
+.X {
+  background-image: url(images/X.png);
+}
+
+.Y {
+  margin-left: -3px !important;
+  margin-right: -4px !important;
+  background-image: url(images/Y.png);
+}
+
+.Z {
+  background-image: url(images/Z.png);
+}
+
+.x {
+  margin-left: -5px!important;
+  margin-right: -5px!important;
+  background-image: url(images/space.png);
+}
+
+@import url('http://fonts.cdnfonts.com/css/built-titling');
+
+.titles {
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 1),
+    0px 0px 30px rgba(255, 255, 255, 1), 0px 0px 30px rgba(255, 255, 255, 1);
+  /* animation: color-change 3s infinite; */
+  /* font-family: "Built Titling", sans-serif;
+  font-style: italic; */
+  font-size: 200%;
+}
+
+.shadowed {
+  filter: 0px 0px 30px rgba(255, 255, 255, 1),
+    0px 0px 30px rgba(255, 255, 255, 1), 0px 0px 30px rgba(255, 255, 255, 1);
+}
+
+#caption {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 10px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: 30px;
+  font-size: 15px;
+  color: #d41932;
+  height: 30px;
+  width: 100%;
+  white-space: nowrap;
+  -moz-animation: caption 50s linear 0s infinite;
+  -webkit-animation: caption 50s linear 0s infinite;
+}
+
+@-moz-keyframes caption {
+  0% {
+    margin-left: 120%;
+  }
+  100% {
+    margin-left: -4200px;
+  }
+}
+
+@-webkit-keyframes caption {
+  0% {
+    margin-left: 120%;
+  }
+  100% {
+    margin-left: -4200px;
+  }
+}
+
+.logo {
+  height: 100px;
+  width: 50vw;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/gb2_compressed.gif);}
+
+.GB-body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg2.png);}
+
+@keyframes color-change {
+  0% { color: rgb(236, 191, 28); }
+  20% { color: rgb(229, 131, 51); }
+  35% { color: rgb(195, 57, 108); }
+  50% { color: rgb(44, 102, 168); }
+  70% { color: rgb(30, 182, 131); }
+  100% { color: rgb(236, 191, 28); }
+}

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+  <link rel="stylesheet" href="styles2.css">
+
+  <title>Gameboys Name Generator!</title>
+</head>
+
+<body class="GB-body">
+  <div class="card my-5 mx-4 gb-card">
+    <div class="card-body px-0" id="download_area">
+      <div class="container text-center px-0">
+        <div class="logo shadowed" style="width: 75%"></div>
+        <span class="titles mt-0 text-warning" style="font-weight: 900; font-size: 150%">NAME GENERATOR</span>
+        <p class="my-2 mb-4 text-secondary" id="instruction"><span style="font-size: 80%;">Enter your name 👇 then click 🎮 to generate!</span></p>
+        <div id="io-container">
+          <div class="input-group px-3">
+            <input class="form-control form-control-lg mx-auto text-center name"
+              style=""
+              id="name" type="text" placeholder="" oninput="handleInput(event)" onkeydown="handleSubmit(event)">
+            <div class="input-group-append">
+              <button type="button" onclick="getNameArray()" id="btn-generate"
+                style=""
+                class="btn btn-primary btn-lg">🎮</button>
+            </div>
+          </div>
+          <p class="px-3 mb-3 text-secondary text-left" style="font-size: 80%;"><span id="chars-left">24</span>
+            characters left.</p>
+          <div class="row my-5 py-5 mx-4 text-center"
+            style="height: 100%; display: flex; justify-content: center; flex-wrap: wrap;" id="generated_name"
+            style="background-color: white; border-radius: 10px;">
+            <!-- Typing indicator -->
+            <div class="typing-animation">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="fill hide" id="wrapper-0" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-1" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-2" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-3" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-4" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-5" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-6" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-7" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-8" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-9" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-10" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-11" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-12" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-13" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-14" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-15" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-16" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-17" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-18" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-19" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-20" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-21" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-22" style="height: 35px;"></div>
+            <div class="fill hide" id="wrapper-23" style="height: 35px;"></div>
+            <div class="next-door hide mt-5" id="next-door" style="height:0px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body text-center m-0 p-0">
+      <button class="mx-0 px-2 py-4 font-weight-bold d-block w-100 border-0"
+        style="background-color: #f9c435; cursor: pointer" onclick="reset()">
+        START OVER ↺</button>
+      <a class="flex-grow-1 text-light mx-0 px-4 py-4 small font-weight-bold d-block"
+        style="background-color: #e84095;" target="_blank" href="https://www.youtube.com/watch?v=paloSIbSQR0">Stream Pearl
+        Next Door ➜
+      </a>
+      <div class="row mx-auto d-flex">
+        <a class="flex-grow-1 text-light mx-0 px-4 py-4 small font-weight-bold d-block"
+          style="background-color: #3f6ce9;" target="_blank" href="https://www.youtube.com/playlist?list=PLEr9FH7oPOQ60QPmaIbofYnS6OKR3H5g-">Gameboys
+          Season 1 ➜
+        </a>
+        <a class="flex-grow-1 text-light mx-0 px-4 py-4 small font-weight-bold d-block"
+          style="background-color: #1ea689;" target="_blank"
+          href="https://open.spotify.com/album/36pJG5xXQaJWONAnpUJGfx?si=a3ab66521fa74538">Gameboys Season 1 Soundtrack
+          ➜
+        </a>
+      </div><br>
+      <small class="d-inline-block px-3" style="color: #969696;">Supports generating uppercase letters only. View site
+        in landscape to print longer words.</small><br>
+      <small class="d-inline-block px-3 mb-4" style="color: #969696;">Made with ♥️ by <a
+          href=https://twitter.com/surethingpating/ target="_blank"><strong>surethingpating</strong></a>
+          and <a
+          href=https://twitter.com/rits_kolokoy/ target="_blank"><strong>rits_kolokoy</strong></a></small>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+<script>
+  function ClearFields() {
+    document.getElementById("name").value = "";
+  }
+
+  function reset() {
+    // Reset indicators
+    document.getElementById('chars-left').textContent = '24';
+    setTimeout(() => {
+      document.getElementById("instruction").textContent = "Enter your name 👇 then click 🎮 to generate!";
+    }, 1000);
+
+    // Reset output field
+    var name = document.getElementById("name").value;
+    var ar = name.split('')
+    for (i = 0; i < 25; i++) {
+      var cssClass = ar[i]
+      if (cssClass == " ") {
+        cssClass = "x";
+      }
+      document.getElementById('wrapper-' + i).classList.remove(cssClass);
+      document.getElementById('wrapper-' + i).classList.add("hide");
+      document.getElementById('wrapper-' + i).classList.remove("show");
+      document.getElementById('next-door').classList.remove("show");
+      document.getElementById('next-door').classList.add("hide");
+      ClearFields()
+      document.getElementById("name").removeAttribute("disabled");
+      document.getElementById("btn-generate").removeAttribute("disabled");
+    }
+
+  }
+
+  function getNameArray() {
+    var name = document.getElementById("name").value;
+    document.getElementById('next-door').classList.remove("hide");
+    document.getElementById('next-door').classList.add("show");
+    var ar = name.split('')
+    for (i = 0; i < ar.length; i++) {
+      var cssClass = ar[i]
+      if (cssClass == " ") {
+        cssClass = "x";
+      }
+      document.getElementById('wrapper-' + i).classList.add(cssClass);
+      document.getElementById('wrapper-' + i).classList.remove("hide");
+      document.getElementById('wrapper-' + i).classList.add("show");
+    }
+    document.getElementById("name").setAttribute("disabled", "disabled");
+    document.getElementById("btn-generate").setAttribute("disabled", "disabled");
+    // Update indicators
+    setTimeout(() => {
+      document.getElementById("instruction").textContent = "Click 'START OVER ↺' to reset the input.";
+    }, 2000);
+  }
+
+  // Handles input transformation and limitation and update indicators
+  function handleInput(e) {
+    e = e || window.event;
+
+    // Transform input to uppercase
+    e.target.value = e.target.value.toUpperCase();
+
+    // Limit input to 24 characters
+    if (e.target.value.length > 24)
+      e.target.value = e.target.value.substring(0, 24);
+
+    // Update 'characters left' indicator
+    const inputLength = e.target.value.length;
+    document.getElementById('chars-left').textContent = 24 - inputLength;
+  }
+
+  // Hanldes form submit when 'Enter' key is pressed
+  function handleSubmit(e) {
+    e = e || window.event;
+    if (e.key === "Enter") getNameArray();
+  }
+
+    // var node = document.getElementById('generated_name');
+    // var btn = document.getElementById('download');
+
+    // btn.onclick = function() {
+    //   domtoimage.toBlob(document.getElementById('generated_name'))
+    //     .then(function(blob) {
+    //       window.saveAs(blob, 'gameboys.png');
+    //     });
+// }
+
+
+</script>
+
+</html>
