@@ -292,7 +292,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(images/gb2_compressed.gif);}
+  background-image: url(images/gb2_min.gif);}
 
 .GB-body {
     min-height: 100vh;
@@ -301,7 +301,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(images/bg2.png);}
+    background-image: url(images/bg2_min.png);}
 
 @keyframes color-change {
   0% { color: rgb(236, 191, 28); }
